@@ -1,6 +1,5 @@
-# syntax=docker/dockerfile:1
-FROM nginx 1.25
+FROM nginx:1.25
 COPY index.html /usr/share/nginx/html 
-EXPOSE 8080
+EXPOSE 8100
 CMD ["nginx", "-g", "daemon off;"]
 
